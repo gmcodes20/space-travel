@@ -172,7 +172,7 @@ p {
   padding-top: 0.5rem;
   text-decoration: none;
   color: hsl(var(--clr-light));
-  transform: translate(-100%);
+  transform: translateY(-100%);
   transition: transform 0.25s ease-in;
 }
 
@@ -581,7 +581,7 @@ button {
   border-bottom: 1px solid hsl(var(--clr-white) / 0.15);
 }
 .crew-tab {
-  --flow-gap: 0;
+  --flow-gap: 3rem;
   --gap: 1.5rem;
   grid-area: tab;
 }

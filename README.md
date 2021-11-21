@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/gmcodes20/space-travel)
-- Live Site URL: [Add live site URL here](https://gmcodes20.github.io/space-travel/)
+- Solution URL: [ solution URL ](https://www.frontendmentor.io/solutions/sematic-html-javascropt-and-css-gsYcIUvZS)
+- Live Site URL: [ live site URL ](https://gmcodes20.github.io/space-travel/)
 
 ## My process
 
