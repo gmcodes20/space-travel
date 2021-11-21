@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="destination">
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+    <header class="primary-header flex">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="./assets/shared/logo.svg"
+          alt="space tourism logo"
+        />
+      </div>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+
+      <nav class="nav">
+        <ul
+          data-visibility="false"
+          id="primary-navigation"
+          class="
+            primary-navigation
+            flex
+            fs-3
+            text-white
+            ff-sans-cond
+            underlined-indicators
+          "
+        >
+          <li>
+            <a
+              class="text-white uppercase ff-sans-cond ls-2"
+              href="./index.html"
+            >
+              <span>00</span> Home</a
+            >
+          </li>
+          <li class="active">
+            <a
+              class="text-white uppercase ff-sans-cond ls-2"
+              href="./destination.html"
+            >
+              <span>01</span> Destination</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white uppercase ff-sans-cond ls-2"
+              href="./crew.html"
+            >
+              <span>02</span> Crew</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white uppercase ls-2 ff-sans-cond"
+              href="./technology.html"
+            >
+              <span>03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grid-container flow" id="main">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">01</span> Pick your destination
+      </h1>
+
+      <picture class="moon-destination--image">
+        <source id="webp-src" srcset="./assets/destination/image-moon.webp" />
+        <img
+          id="img-src"
+          src="./assets/destination/image-moon.png"
+          alt="Moon"
+        />
+      </picture>
+
+      <div
+        class="flex text-white tab-list underlined-indicators"
+        role="tablist"
+        aria-label="destination list"
+      >
+        <button
+          tabindex="0"
+          aria-selected="true"
+          aria-controls="moon-tab"
+          role="tab"
+          class="text-accent fs-3 ff-sans-cond ls-2 uppercase btn-tab moon"
+        >
+          Moon
+        </button>
+        <button
+          tabindex="-1"
+          aria-selected="false"
+          aria-controls="mars-tab"
+          role="tab"
+          class="text-accent fs-3 ff-sans-cond ls-2 uppercase btn-tab moon"
+        >
+          Mars
+        </button>
+        <button
+          tabindex="-1"
+          aria-selected="false"
+          aria-controls="europa-tab"
+          role="tab"
+          class="text-accent fs-3 ff-sans-cond ls-2 uppercase btn-tab moon"
+        >
+          Europa
+        </button>
+        <button
+          tabindex="-1"
+          aria-selected="false"
+          aria-controls="titan-tab"
+          role="tab"
+          class="text-accent fs-3 ff-sans-cond ls-2 uppercase btn-tab moon"
+        >
+          Titan
+        </button>
+      </div>
+
+      <article
+        id="moon-tab"
+        class="destination-article text-white ff-sans-normal fs-4"
+      >
+        <h2
+          id="article-heading"
+          class="text-white ls-1 fs-9 uppercase ff-serif"
+        >
+          Moon
+        </h2>
+
+        <p id="article-p">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div class="line"></div>
+        <div class="flex destination-meta">
+          <div>
+            <h3
+              id="distance-heading"
+              class="block ff-sans-cond fs-2 ls-1 text-accent"
+            >
+              Avg. distance
+            </h3>
+            <p
+              id="distance-paragraph"
+              class="text-white fs-5 ff-serif uppercase"
+            >
+              384,400 km
+            </p>
+          </div>
+
+          <div>
+            <h3
+              id="time-heading"
+              class="block ff-sans-cond fs-2 ls-1 text-accent"
+            >
+              Est. travel time
+            </h3>
+            <p
+              id="time-paragraph"
+              class="text-white fs-5 ls-1 ff-serif uppercase"
+            >
+              3 days
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="./menu.js"></script>
+    <script src="./tabs.js"></script>
+  </body>
+</html>

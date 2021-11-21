@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="crew">
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+    <header class="primary-header flex">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="./assets/shared/logo.svg"
+          alt="space tourism logo"
+        />
+      </div>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+
+      <nav class="nav">
+        <ul
+          data-visibility="false"
+          id="primary-navigation"
+          class="
+            primary-navigation
+            flex
+            fs-3
+            text-white
+            ff-sans-cond
+            underlined-indicators
+          "
+        >
+          <li>
+            <a
+              class="text-white uppercase ff-sans-cond ls-2"
+              href="./index.html"
+            >
+              <span>00</span> Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white uppercase ff-sans-cond ls-2"
+              href="./destination.html"
+            >
+              <span>01</span> Destination</a
+            >
+          </li>
+          <li class="active">
+            <a
+              class="text-white uppercase ff-sans-cond ls-2"
+              href="./crew.html"
+            >
+              <span>02</span> Crew</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white uppercase ls-2 ff-sans-cond"
+              href="./technology.html"
+            >
+              <span>03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container flow">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">02</span> Meet Your Crew
+      </h1>
+
+      <picture class="crew-image">
+        <source
+          id="img-webp"
+          srcset="./assets/crew/image-douglas-hurley.webp"
+        />
+        <img id="img-png" src="./assets/crew/image-douglas-hurley.png" alt="" />
+      </picture>
+
+      <div class="crew-tab dot-indicators flex" role="tablist">
+        <button
+          aria-selected="true"
+          aria-controls="douglas-hurley"
+          tabindex="0"
+          role="tab"
+        >
+          <span class="sr-only">Douglas Hurley</span>
+        </button>
+
+        <button
+          aria-selected="false"
+          tabindex="-1"
+          aria-controls="mark-shuttleworth"
+          role="tab"
+        >
+          <span class="sr-only">Mark Shuttleworth</span>
+        </button>
+        <button
+          aria-selected="false"
+          tabindex="-1"
+          aria-controls="victor-glover"
+          role="tab"
+        >
+          <span class="sr-only">Victor Glover</span>
+        </button>
+        <button
+          aria-selected="false"
+          tabindex="-1"
+          aria-controls="anousheh-ansari"
+          role="tab"
+        >
+          <span class="sr-only">Anousheh Ansari</span>
+        </button>
+      </div>
+
+      <article class="crew-article text-white ff-sans-normal fs-4 flow">
+        <div class="crew-member-name flow flow-gap-x2">
+          <h2 id="name-title" class="block fs-6 uppercase text-white">
+            Commander
+          </h2>
+          <p id="name" class="text-white ls-1 fs-7 uppercase ff-serif">
+            Douglas Hurley
+          </p>
+        </div>
+        <p id="bio" class="flow-gap-x1">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+      </article>
+    </main>
+
+    <script src="./menu.js"></script>
+    <script src="./tabs.js"></script>
+  </body>
+</html>
